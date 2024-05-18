@@ -53,6 +53,6 @@
            </div>
 
 
-           <?php
+<?php
     include './../template/footer.php'
 ?>

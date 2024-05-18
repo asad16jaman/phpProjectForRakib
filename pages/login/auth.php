@@ -36,12 +36,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $_SESSION['messages'] = $messages;
         header('Location: ./../../user/login/');
     }
-    
-
-
-
-
-    
+        
 }
 
 $cnn->close();
+

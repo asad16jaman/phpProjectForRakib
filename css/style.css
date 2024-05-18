@@ -1,11 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary-1: #6244C5;
     --primary: #500eb0;
     --secondary: #FFC448;
     --light: #FAFAFB;
     --dark: #12141D;
     --danger: #ff0000d6;
+}
+body{
+    font-family: "Roboto", sans-serif!important;
 }
 
 .back-to-top {
@@ -660,3 +662,46 @@
 .canclebtn{
     margin-right: 14px;
 }
+
+/* TERMS OF SERVICE pages css */
+
+.service{
+    text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.terms div p span{
+    font-weight: 500;
+  color: black;
+}
+.terms div p{
+    text-align: justify;
+}
+.terms div h1{
+    font-size: 1.5rem;
+}
+.terms div{
+    margin-bottom: 50px;
+}
+
+/* PRIVACY POLICY css */
+.privacy{
+    text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.privacymain div p span{
+    font-weight: 500;
+  color: black;
+}
+.privacymain div p{
+    text-align: justify;
+}
+.privacymain div h1{
+
+    font-size: 1.5rem;
+}
+.privacymain div{
+    margin-bottom: 50px;
+}
+

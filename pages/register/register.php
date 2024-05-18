@@ -9,20 +9,20 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
-function varifyme($varify_token,$email){
+function varifyme($varify_token,$email,$username){
     try{
 
-        $senderMail = 'asaduzzaman15-4330@diu.edu.bd';
+        $senderMail = '';//this variable contain sender mail
         $mail = new PHPMailer(true);             
         $mail->isSMTP();                                     //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';               //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                            //Enable SMTP authentication
         $mail->Username   = $senderMail;                     //SMTP username
-        $mail->Password   = 'ffnz xzad fbwj xujs';           //SMTP password
+        $mail->Password   = '';//SMTP password
         $mail->SMTPSecure = 'lts';                           //Enable implicit TLS encryption
         $mail->Port       = 587;
-        $mail->setFrom($senderMail);                          //add sender
-        $mail->addAddress($email);                            //Add a recipient
+        $mail->setFrom($senderMail,'admin');                          //add sender
+        $mail->addAddress($email,$username);                            //Add a recipient
         $mail->isHTML(true);   
         $mail->Subject = 'This email is for your varification';  //subject of this email
 
@@ -60,7 +60,7 @@ function varifyme($varify_token,$email){
 $dbserver = 'localhost';
 $dbusername = 'root';
 $dbpassword = "";
-$db = 'mml';
+$db = ""; //database name
 
 $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
     if($cnn->connect_error){
@@ -76,8 +76,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $password = $_POST['password'];
     
 
-    $sql = "SELECT * FROM users WHERE email='$email'";
-    $isExist = $cnn->query($sql);
+    
    
 
     if($username == "" || $email == "" || $password == ""){
@@ -86,6 +85,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         header('Location: ./../../');
         
     }else{
+        $sql = "SELECT * FROM users WHERE email='$email'";
+    $isExist = $cnn->query($sql);
 
         if( $isExist->num_rows > 0){
             $_SESSION['messages'] = "this email already taken";
@@ -105,7 +106,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $_SESSION['isLogin'] = true;
                 $_SESSION['varified'] = 0;
                 $_SESSION['username'] = $username;
-                if(varifyme($varifyToken,$email)){
+                if(varifyme($varifyToken,$email,$username)){
                     header('Location: ./../../user/varify/');
                 }else{
                     header('Location: ./../../');

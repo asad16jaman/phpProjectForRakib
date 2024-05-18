@@ -15,9 +15,10 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">  --> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -125,6 +126,8 @@ include './pages/testimonial.php'
 <!-- Testimonial End -->
 
 
+
+
 <!-- Contact Start -->
 <?php
 include './pages/contact.php'
@@ -139,8 +142,8 @@ include './pages/contact.php'
                 &copy; <a class="border-bottom text-secondary" href="#">Magikal.app</a>, All Right Reserved.
             </div>
             <div class="col-md-6 text-center text-md-end footerText">
-                <span><a href="">Terms of Services</a></span>
-                <span><a href="">Privacy Policy</a></span>
+                <span><a href="./user/terms">Terms of Services</a></span>
+                <span><a href="./user/policy">Privacy Policy</a></span>
             </div>
         </div>
     </div>
@@ -179,31 +182,6 @@ include './pages/login.php'
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-        
-    <script>
-
-
-    //     $('#signupForm').submit(function(e){
-
-
-    //         e.preventDefault();
-    //         console.log("click hoice")
-    //         $.ajax({
-    //       url:'pages/register.php',
-    //       type: 'post',
-    //       data: '{ID:"mm"}',
-    //       success: function(result) {
-    //           if(result){
-               
-
-    //           }
-    //       }
-    //   });
-    //     })
-
-
-
-    </script>
 
 </body>
 

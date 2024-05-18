@@ -1,9 +1,11 @@
 <?php
 include './../template/header.php';
 
+
 if(!isset($_SESSION['isLogin'])){
     header('Location: ./../../');
 }
+
 
 if(isset($_SESSION['varified']) && $_SESSION['varified']== 1){
     $_SESSION['messages'] = "you are varified person";
@@ -33,7 +35,7 @@ $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
             $sql = "UPDATE users SET varified=true WHERE id=".$data['id'];
             if($cnn->query($sql)== true){
                 $_SESSION['varified'] = 1;
-                header('Location: ./dashboard/');
+                header('Location: ./../dashboard/');
             }
         }else{
             $_SESSION['messages'] = "this is not currect varification code";
@@ -43,6 +45,22 @@ $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
     }
 
 ?>
+<div class="container mt-1">
+    <div class="row">
+        <div class="col-md-12">
+        <?php
+                    if(isset($_SESSION['messages'])){
+                        echo '
+                        <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+                            '.$_SESSION['messages'].'
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>';
+                        unset($_SESSION['messages']);
+                    }
+                ?>
+        </div>
+    </div>
+</div>
 
 <div class="varification-container">
         <div class="varify">
