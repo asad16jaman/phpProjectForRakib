@@ -142,89 +142,39 @@ body{
 }
 
 
-/*** Header ***/
+/*** home page css ***/
 #home {
     margin-bottom: 6rem;
-    background: url(../img/bg-header.png) left top no-repeat;
+    background: url(../img/bg-header.png) no-repeat left top,linear-gradient(#fff,#fff);
 }
-.homeService img{
-    width: 100px;
+.topzero{
+    margin-top: 0;
 }
-.home-main{
-    width: 100%;
-    height: auto;
-    display: flex;
-
-}
-
-.home-main .home-left{
-    width: 50%;
-}
-
-.home-left .home-welcome{
-    margin: 145px 0px 0px 170px;
-}
-
-.home-main .home-left .home-app{
-    display: flex;
-    padding: 35px 0px 170px 30px;
-}
-.noticText{
-    font-size: 1.7rem;
-}
-.home-main .home-left .home-app h3{
-    color: red;
-    text-align: center;
-    font-size: 1.3rem;
-}
-.home-main .home-left .home-app img{
-    width: 48%;
-}
-.myimg{
-    width: 50%;
-}
-.video{
-    width: 50%;
-  display: flex;
-
-  align-items: end;
-  padding-left: 40px;
-}
-.home-main .home-right{
-    width: 50%;
-}
-.plybtn{
-   padding: 0px 0px 21px;
-}
-
 .signupBtn{
     position: absolute;
-    right: 6%;
-    top: 10%;
+  right: 9%;
+  top: 5%;
 }
 
-@media (max-width: 991.98px) {
-    .home-main{
-        width: 100%;
-        height: auto;
-        display: block;
-    
-    }
-    
-    .home-main .home-left{
-        width: 100%;
-        overflow: hidden;
-       
-    }
+.homeService{
+    width: 70%;
+}
+.homeService img{
+    width: 45%;
+}
+.homeService h3{
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.playbtn{
 
-
-    .home-main .home-right{
-        width: 100%;
-        background-color: gray;
-        overflow: hidden;
-    }
-
-   
+  width: 30%;
+ 
+}
+.resizefont{
+    font-size: 0.9rem;
+  margin-top: 22px;
 }
 
 

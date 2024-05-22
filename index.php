@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-    session_start()
+    session_start();
+    
+    //importing email sending function
+    include './pages/email/sndmail.php';
 ?>
 
 <head>
@@ -71,7 +74,7 @@ include './pages/navbar.php'
 
 <!-- Header Start -->
 <?php
-include './pages/home.php'
+// include './pages/home.php'
     ?>
 <!-- Header End -->
 
@@ -79,49 +82,49 @@ include './pages/home.php'
 
 <!-- Video Modal Start -->
 <?php
-include './pages/videomodal.php'
+// include './pages/videomodal.php'
     ?>
 <!-- Video Modal End -->
 
 
 <!-- About Start -->
 <?php
-include './pages/about.php'
+// include './pages/about.php'
 ?>
 <!-- About End -->
 
 
 <!-- Expertise Start -->
 <?php
-include './pages/experience.php'
+// include './pages/experience.php'
 ?>
 <!-- Expertise End -->
 
 
 <!-- Service Start -->
 <?php
-include './pages/service.php'
+// include './pages/service.php'
 ?>
 <!-- Service End -->
 
 
 <!-- Projects Start -->
 <?php
-include './pages/project.php'
+// include './pages/project.php'
 ?>
 <!-- Projects End -->
 
 
 <!-- Team Start -->
 <?php
-include './pages/team.php'
+// include './pages/team.php'
 ?>
 <!-- Team End -->
 
 
 <!-- Testimonial Start -->
 <?php
-include './pages/testimonial.php'
+// include './pages/testimonial.php'
 ?>
 <!-- Testimonial End -->
 
@@ -142,8 +145,8 @@ include './pages/contact.php'
                 &copy; <a class="border-bottom text-secondary" href="#">Magikal.app</a>, All Right Reserved.
             </div>
             <div class="col-md-6 text-center text-md-end footerText">
-                <span><a href="./user/terms">Terms of Services</a></span>
-                <span><a href="./user/policy">Privacy Policy</a></span>
+                <span><a href="./terms-of-services">Terms of Services</a></span>
+                <span><a href="./privacy-policy">Privacy Policy</a></span>
             </div>
         </div>
     </div>

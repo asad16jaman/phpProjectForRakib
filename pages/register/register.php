@@ -1,48 +1,9 @@
 <?php
 session_start();
 
-// for send email 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
 
-//Load Composer's autoloader
-require 'vendor/autoload.php';
+include './../email/sndmail.php';
 
-function varifyme($varify_token,$email,$username){
-    try{
-
-        $senderMail = 'asaduzzaman15-4330@diu.edu.bd';//this variable contain sender mail-
-        $mail = new PHPMailer(true);             
-        $mail->isSMTP();                                     //Send using SMTP
-        $mail->Host       = 'smtp.gmail.com';               //Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                            //Enable SMTP authentication
-        $mail->Username   = $senderMail;                     //SMTP username
-        $mail->Password   = 'ffnz xzad fbwj xujs';//SMTP password
-        $mail->SMTPSecure = 'lts';                           //Enable implicit TLS encryption
-        $mail->Port       = 587;
-        $mail->setFrom($senderMail,'admin');                          //add sender
-        $mail->addAddress($email,$username);                            //Add a recipient
-        $mail->isHTML(true);   
-        $mail->Subject = 'This email is for your varification';  //subject of this email
-
-        $template = "
-        <hl>Varify Yourself</h1><br>
-            <h3>Your varification code is '$varify_token' </h3>
-            <p>inter it into the input and varify yourself</p>
-        ";
-
-            $mail->Body    =  $template;
-            $mail->send();
-
-        return true;
-
-    }catch(Exception $e){
-        
-        return false;
-    }
-    
- }
 
  //generation varification code
  function generateText(){
@@ -75,10 +36,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $email = $_POST['email'];
     $password = $_POST['password'];
     
-
-    
-   
-
     if($username == "" || $email == "" || $password == ""){
         echo 'ata vitore...';
         $_SESSION['messages'] = 'username , email , password are required';
@@ -106,7 +63,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $_SESSION['isLogin'] = true;
                 $_SESSION['varified'] = 0;
                 $_SESSION['username'] = $username;
-                if(varifyme($varifyToken,$email,$username)){
+                $template = "
+                    <hl>Varify Yourself</h1><br>
+                        <h3>Your varification code is '$varifyToken' </h3>
+                        <p>inter it into the input and varify yourself</p>
+                    ";
+                if(varifyme($email,$username,$template)){
                     header('Location: ./../../user/varify/');
                 }else{
                     header('Location: ./../../');
