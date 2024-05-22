@@ -12,13 +12,13 @@ require 'vendor/autoload.php';
 function varifyme($varify_token,$email,$username){
     try{
 
-        $senderMail = '';//this variable contain sender mail
+        $senderMail = 'asaduzzaman15-4330@diu.edu.bd';//this variable contain sender mail-
         $mail = new PHPMailer(true);             
         $mail->isSMTP();                                     //Send using SMTP
         $mail->Host       = 'smtp.gmail.com';               //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                            //Enable SMTP authentication
         $mail->Username   = $senderMail;                     //SMTP username
-        $mail->Password   = '';//SMTP password
+        $mail->Password   = 'ffnz xzad fbwj xujs';//SMTP password
         $mail->SMTPSecure = 'lts';                           //Enable implicit TLS encryption
         $mail->Port       = 587;
         $mail->setFrom($senderMail,'admin');                          //add sender
@@ -60,7 +60,7 @@ function varifyme($varify_token,$email,$username){
 $dbserver = 'localhost';
 $dbusername = 'root';
 $dbpassword = "";
-$db = ""; //database name
+$db = "mml"; //database name
 
 $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
     if($cnn->connect_error){

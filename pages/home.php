@@ -1,4 +1,4 @@
-    <!-- <div class="container-fluid bg-light my-6 mt-0" id="home">
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
 
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -33,10 +33,10 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
+    <!-- <div class="container-fluid bg-light my-6 mt-0" id="home">
         <div class="home-main">
             <div class="home-left">
                 <div class="home-welcome">
@@ -75,4 +75,4 @@
                 
             </div>
         </div>
-    </div>
+    </div> -->
