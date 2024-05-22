@@ -1,8 +1,3 @@
-    <?php
-       if(isset($_SESSION['username'])){
-        echo  $_SESSION['username'];
-       }
-    ?>
     <div class="container-fluid bg-light my-6 mt-0" id="home">
 
         <div class="container">
@@ -38,16 +33,3 @@
         </div>
     </div>
 
-
-
-    <?php
-                    // if(isset($_SESSION['isLogin'])){
-                    //     if($_SESSION['isLogin']){
-                    //         $username = $_SESSION['username'];
-                    //         echo  "<span class='btn btn-primary py-3 px-5 signupBtn'>$username</span>";
-                    //         echo  "<span class='btn btn-primary py-3 px-5 signupBtn'>$username</span>";
-                    //     }
-                    // }else{
-                    //     echo '<a class="btn btn-primary py-3 px-5 signupBtn"  data-bs-toggle="modal" data-bs-target="#userSignupModel">sign up</a>';
-                    // }
-                ?>

@@ -1,9 +1,9 @@
 <?php
  session_start();
-$dbserver = 'localhost';
-$dbusername = 'root';
-$dbpassword = "";
-$db = 'mml';
+ $dbserver = 'localhost';
+ $dbusername = 'root';
+ $dbpassword = "";
+ $db = 'mml';
 
 $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
     if($cnn->connect_error){

@@ -67,64 +67,64 @@ if (isset($_SESSION['messages'])) {
 
 <!-- Navbar Start -->
 <?php
-include './pages/navbar.php'
-    ?>
+    include './pages/navbar.php'
+?>
 <!-- Navbar End -->
 
 
 <!-- Header Start -->
 <?php
-// include './pages/home.php'
-    ?>
+    include './pages/home.php'
+?>
 <!-- Header End -->
 
 
 
 <!-- Video Modal Start -->
 <?php
-// include './pages/videomodal.php'
-    ?>
+    include './pages/videomodal.php'
+?>
 <!-- Video Modal End -->
 
 
 <!-- About Start -->
 <?php
-// include './pages/about.php'
+    include './pages/about.php'
 ?>
 <!-- About End -->
 
 
 <!-- Expertise Start -->
 <?php
-// include './pages/experience.php'
+    include './pages/experience.php'
 ?>
 <!-- Expertise End -->
 
 
 <!-- Service Start -->
 <?php
-// include './pages/service.php'
+    include './pages/service.php'
 ?>
 <!-- Service End -->
 
 
 <!-- Projects Start -->
 <?php
-// include './pages/project.php'
+    include './pages/project.php'
 ?>
 <!-- Projects End -->
 
 
 <!-- Team Start -->
 <?php
-// include './pages/team.php'
+    include './pages/team.php'
 ?>
 <!-- Team End -->
 
 
 <!-- Testimonial Start -->
 <?php
-// include './pages/testimonial.php'
+    include './pages/testimonial.php'
 ?>
 <!-- Testimonial End -->
 
@@ -133,7 +133,7 @@ include './pages/navbar.php'
 
 <!-- Contact Start -->
 <?php
-include './pages/contact.php'
+    include './pages/contact.php'
 ?>
 <!-- Contact End -->
 
@@ -157,15 +157,9 @@ include './pages/contact.php'
 
 <!-- user signup modal start -->
 <?php
-include './pages/signup.php'
-    ?>
+    include './pages/signup.php'
+?>
 <!-- user signup modal end -->
-
-<!-- user login modal start -->
-<?php
-include './pages/login.php'
-    ?>
-<!-- user login modal end -->
 
 
 <!-- Back to Top -->
