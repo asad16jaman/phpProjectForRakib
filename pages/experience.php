@@ -37,6 +37,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-6">
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
@@ -68,6 +69,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6 wow fadeInUp p-0" data-wow-delay="0.5s">
                     <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
                         <li class="nav-item w-50">
@@ -78,32 +80,32 @@
                         </li>
                     </ul>
                     
-                    <div class="tab-content">
+                    <div class="tab-content" style="margin-top:100px">
                         <div id="tab-1" class="tab-pane fade show active">
                             <div class="row gy-5 gx-4">
                                 <div class="col-sm-6">
                                    <h6>Post Exclusive Content</h6>
                                     
                                     <span class="borderBottom"></span>
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                                  
                                     <h6 class="mb-0">News, Photos, Audios & Videos</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h6>Grow Your Audience</h6>
                                     <span class="borderBottom"></span>
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                                   
                                     <h6 class="mb-0">Expand Your Reach To New Followers</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h6>Receive Tips & Digital Gifts</h6>
                                     <span class="borderBottom"></span>
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                                  
                                     <h6 class="mb-0">Tips, Virtual Items, Live Gifts </h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h6>Reward Your Dedicated Fans</h6>
                                     <span class="borderBottom"></span>
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                                  
                                     <h6 class="mb-0">Discover New Ways To Engage your Audience</h6>
                                 </div>
                             </div>
@@ -114,25 +116,25 @@
                                     <h6>Monetize   Your Skills</h6>
                                     <span class="borderBottom"></span>
                                     <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                                
                                     <h6 class="mb-0">Get Paid For Your Advice</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h6>Join A Community Of Professionals</h6>
                                     <span class="borderBottom"></span>
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                               
                                     <h6 class="mb-0">Expand Your Network</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h6>Expand Your Reach</h6>
                                     <span class="borderBottom"></span>
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                             
                                     <h6 class="mb-0">Reach A Wider Audience</h6>
                                 </div>
                                 <div class="col-sm-6">
                                     <h6>Unlock Endless Opportunities</h6>
                                     <span class="borderBottom"></span>
-                                    <p class="text-primary mb-1">2000 - 2045</p>
+                               
                                     <h6 class="mb-0">Propel Your Career To New Heights</h6>
                                 </div>
                             </div>

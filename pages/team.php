@@ -14,8 +14,8 @@
                         <img class="img-fluid" src="img/online doctor consultation.jpg" alt="">
                         <div class="team-text bg-white rounded-end p-4">
                             <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
+                                <h5>Ask a Doctor </h5>
+                                <span>Online</span>
                             </div>
                             <i class="fa fa-arrow-right fa-2x text-primary"></i>
                         </div>
@@ -26,8 +26,8 @@
                         <img class="img-fluid" src="img/online lawyer consultation.jpg" alt="">
                         <div class="team-text bg-white rounded-end p-4">
                             <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
+                                <h5>Ask a Lawyer </h5>
+                                <span>Online</span>
                             </div>
                             <i class="fa fa-arrow-right fa-2x text-primary"></i>
                         </div>
@@ -38,8 +38,8 @@
                         <img class="img-fluid" src="img/online mechanic consultation.jpg" alt="">
                         <div class="team-text bg-white rounded-end p-4">
                             <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
+                                <h5>Ask a Mechanic</h5>
+                                <span>Online</span>
                             </div>
                             <i class="fa fa-arrow-right fa-2x text-primary"></i>
                         </div>
