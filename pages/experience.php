@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp p-0" data-wow-delay="0.5s">
-                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                    <ul class="nav nav-pills   border border-2 border-primary mb-5" style="border-radius: 13px;">
                         <li class="nav-item w-50">
                             <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Content Creators</button>
                         </li>

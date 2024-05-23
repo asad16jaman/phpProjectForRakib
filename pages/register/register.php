@@ -17,7 +17,6 @@ include './../email/sndmail.php';
 }
 
 
-//for database connection
 $dbserver = 'localhost';
 $dbusername = 'root';
 $dbpassword = "";

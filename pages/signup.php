@@ -1,5 +1,5 @@
 <div class="modal fade" id="userSignupModel" tabindex="-1" aria-labelledby="userSignupModel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
        
         <div class="modal-body mx-3">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="form-check">
+                <div class="form-check mb-3">
                   <input class="form-check-input" id="trmCnd" name="trmCnd" type="checkbox" value="true" id="defaultCheck1">
                   <label class="form-check-label" for="trmCnd">
                     I understand the Terms & Conditions

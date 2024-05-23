@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $_SESSION['username'] = $user['username'];
             $_SESSION['email'] = $user['email'];
             $_SESSION['varified'] = $user['varified'];
-            header('Location: ./../../');
+            header('Location: ./../../user/dashboard');
         }else{
             $messages = "given creadential is incurrect...";
             $_SESSION['messages'] = $messages;

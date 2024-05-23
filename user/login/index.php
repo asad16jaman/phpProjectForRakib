@@ -18,9 +18,10 @@
                 ?>
                 <div class="col-md-6 offset-md-3">
 
-                 <div class="card py-3 my-5">
+                 <div class="card py-3 my-5 border-none shadow" style="border:none;">
                     <div class="card-title text-center">
-                        Login Form
+                        <h3>Login</h3>
+                        <hr>
                     </div>
                     <div class="card-body">
                     <form class="g-3" method="post" action="./../../pages/login/auth.php">
@@ -43,7 +44,7 @@
                 </div>                
                 <!-- <input type="submit" value="Sign Up" class="btn btn-primary btn-block"> -->
                 <div class="d-grid">
-                  <input type="submit" value="login" class="btn btn-primary">
+                  <input type="submit" value="Login" class="btn btn-primary">
                 </div>
             </form>
                     </div>
