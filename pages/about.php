@@ -13,7 +13,7 @@
                     <p class="mb-3 about_p"><i class="far fa-check-circle text-primary me-3"></i>User-friendly interface</p>
                     <p class="mb-3 about_p"><i class="far fa-check-circle text-primary me-3"></i>Exclusive Content</p>
                     <p class="mb-3 about_p"><i class="far fa-check-circle text-primary me-3"></i>High Quality Products</p>
-                    <a href="#" class="btn btn-primary about_arrow"><i class="bi bi-arrow-up"></i></a>
+                  
                     
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">

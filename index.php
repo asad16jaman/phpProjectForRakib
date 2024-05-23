@@ -142,7 +142,7 @@ if (isset($_SESSION['messages'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom text-secondary" href="#">Magikal.app</a>, All Right Reserved.
+                &copy; 2024 <a class="border-bottom text-secondary" href="#">Magikal.app</a> All Rights Reserved
             </div>
             <div class="col-md-6 text-center text-md-end footerText">
                 <span><a href="./terms-of-services">Terms of Services</a></span>
