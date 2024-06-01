@@ -121,6 +121,22 @@
         loop: true,
     });
 
+    //controlling modal video....
+    $("#destopVideo").click(function(e){
+        let ifrm = `<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/T9q9-9x6Nz4?vq=hd1080&autoplay=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1"></iframe>`;
+        $('#videoShow').html(ifrm);
+    })
+
+    $(".btn-close").click(function(){
+
+        $('#videoShow').html('');
+    })
+
+    $("#mobileVideo").click(function(e){
+        let ifrm = `<iframe src="https://www.youtube.com/embed/3jLiI4WPHN0?vq=hd1080&autoplay=1&rel=0&cc_load_policy=1&fs=0&controls=0&disablekb=1" width="560" height="315" title="Introducing Magikal, the everything app" frameborder="0"></iframe>`;
+        $('#videoShow').html(ifrm);
+    })
+
     
 })(jQuery);
 

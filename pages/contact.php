@@ -34,7 +34,7 @@
                     <h1 class="display-5 mb-0">Let's Work Together</h1>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
+                    <a class="btn btn-primary py-3 px-5" href="#contact">Say Hello</a>
                 </div>
             </div>
             <div class="row g-5">
@@ -44,19 +44,19 @@
                     <div class="icondiv">
                         
                         <div class="pt-2 socialIcon">
-                            <p class="">Follow me:</p>
+                            <p class="">Follow Us:</p>
                             <div class="iconController">
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.x.com/MagikalApp/"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/people/Magikal/61558922415276/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.youtube.com/@Magikalapp/"><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/magikal.app/"><i class="fab fa-instagram"></i></a>
                             </div>
                             
                             <div class="iconController">
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fa-brands fa-tiktok"></i></a>
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fa-brands fa-threads"></i></a>
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fa-brands fa-snapchat"></i></a>
-                                <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.tiktok.com/@magikal.app/"><i class="fa-brands fa-tiktok"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.threads.net/@magikal.app/"><i class="fa-brands fa-threads"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.snapchat.com/add/magikal.app/"><i class="fa-brands fa-snapchat"></i></a>
+                                <a class="btn btn-square btn-primary me-2" href="https://www.tumblr.com/blog/magikalapp/"><i class="fa-brands fa-tumblr"></i></a>
                             </div>
                         </div>
                     </div>

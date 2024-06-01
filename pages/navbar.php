@@ -12,7 +12,7 @@
                 <a href="#skill" class="nav-item nav-link">Creators</a>
                 <a href="#service" class="nav-item nav-link">Services</a>
             </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+            <a href="#home" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
                 <h1 class="text-primary fw-bold m-0">Magikal</h1>
             </a>
             <div class="navbar-nav me-auto py-0">

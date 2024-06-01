@@ -7,11 +7,8 @@
                 </div>
                 <div class="modal-body">
                     
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay">
+                    <div class="ratio ratio-16x9" id="videoShow">
                         
-                        </iframe>
                     </div>
                 </div>
             </div>

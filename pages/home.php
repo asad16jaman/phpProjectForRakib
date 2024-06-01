@@ -13,8 +13,12 @@
                             <img src="./img/App store.jpg" alt="">
                         </div>
                         <div class="playbtn d-flex">
-                            <button type="button" class="btn-play" data-bs-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <button type="button" class="btn-play d-none d-lg-block" id="destopVideo" data-bs-toggle="modal"
+                                 data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                            <button type="button" class="btn-play d-lg-none" id="mobileVideo" data-bs-toggle="modal"
+                                 data-bs-target="#videoModal">
                                 <span></span>
                             </button>
                             <h5 class="ms-4 mb-0 d-none d-sm-block resizefont">Play Video</h5>
