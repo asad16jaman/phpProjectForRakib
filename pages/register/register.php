@@ -24,7 +24,7 @@ $db = "mml"; //database name
 
 $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
     if($cnn->connect_error){
-        die("there is error".$cnn->connect_error);
+        die("There is an error".$cnn->connect_error);
     }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -36,16 +36,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $password = $_POST['password'];
     
     if($username == "" || $email == "" || $password == ""){
-        echo 'ata vitore...';
-        $_SESSION['messages'] = 'username , email , password are required';
+        $_SESSION['messages'] = 'Username , email , password are required';
         header('Location: ./../../');
-        
     }else{
         $sql = "SELECT * FROM users WHERE email='$email'";
-    $isExist = $cnn->query($sql);
-
+        $isExist = $cnn->query($sql);
         if( $isExist->num_rows > 0){
-            $_SESSION['messages'] = "this email already taken";
+            $_SESSION['messages'] = "This email already taken";
             header('Location: ./../../');
          }else{
 
@@ -62,13 +59,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 $_SESSION['isLogin'] = true;
                 $_SESSION['varified'] = 0;
                 $_SESSION['username'] = $username;
+                $subject = "Magikal - Verification Code";
                 $template = "
-                    <hl>Varify Yourself</h1><br>
-                        <h3>Your varification code is '$varifyToken' </h3>
-                        <p>inter it into the input and varify yourself</p>
+                    <hl>Hi '$username',</h1><br>
+                        <h3>Your varification code is '$varifyToken' </h3> 
                     ";
-                if(varifyme($email,$username,$template)){
-                    header('Location: ./../../user/varify/');
+                if(varifyme($email,$username,$template, $subject)){
+                    header('Location: ./../../user/verify/');
                 }else{
                     header('Location: ./../../');
                 }

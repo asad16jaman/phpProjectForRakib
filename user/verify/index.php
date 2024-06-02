@@ -19,7 +19,7 @@ $db = 'mml';
 
 $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
     if($cnn->connect_error){
-        die("there is error".$cnn->connect_error);
+        die("There is an error".$cnn->connect_error);
     }
     
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
@@ -38,7 +38,7 @@ $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
                 header('Location: ./../dashboard/');
             }
         }else{
-            $_SESSION['messages'] = "this is not currect varification code";
+            $_SESSION['messages'] = "You have entered incorrect verification code.";
             
         }
         
@@ -68,11 +68,10 @@ $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
                 <img src="./img/varify.svg" alt="">
             </div>
             <div class="inputright">
-                <h1>Please check your email</h1>
+                <h4>Please check your email</h4>
                 <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <div class="varifyInput">
-                        <label for="">Code:</label>
-                        <input type="text" class="formInput" name="varificationCode" placeholder="inter your code to varify yourself" id="">
+                    <div class="varifyInput"> 
+                        <input type="text" required class="form-control" name="varificationCode" placeholder="Enter the verification code" id="">
                         <div class="btndiv">
                             <button class="submitBtn canclebtn">CANCLE</button>
                             <input type="submit" class="submitBtn btn-primary" value="SUBMIT">

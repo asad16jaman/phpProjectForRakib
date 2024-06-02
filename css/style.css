@@ -576,7 +576,9 @@ body{
 }
 
 .inputright{
-    padding: 31px 33px;
+    padding: 150px 35px; 
+    width: 500px;
+    border-radius: 12px;
     background: #0000000d;
     margin-top: 12px;
     box-shadow: 4px 16px 27px -1px #0000004d;

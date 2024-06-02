@@ -1,7 +1,7 @@
 <?php
     include './../template/header.php';
     if(isset($_SESSION['isLogin'])){
-        header('Location: ./../../');
+        header('Location: ./../../user/dashboard');
     }
 ?>
            <div class="container">

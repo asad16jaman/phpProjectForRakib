@@ -1,6 +1,6 @@
 <?php
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    if(isset($_POST['contact'])){
        $name = $_POST['name'];
        $email = $_POST['email'];
        $subject = $_POST['subject'];
@@ -15,12 +15,14 @@
        ";
 
         //admin email id .. this email id will get message of client
-       $email = 'asaduzzaman15-4330@diu.edu.bd';
+       $email = 'engineer.rakibrizan@gmail.com';
 
-      
+       $subject = 'Magikal - Contact form subscriber';
 
         //invoc imail function
-       varifyme($email,null,$clintmessage);
+       if(varifyme($email,null, $clintmessage, $subject)){
+         header('thanks.php');
+       }
     }
 
 ?>
@@ -93,7 +95,7 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary py-3 px-5" name="contact" type="submit">Send Message</button>
                             </div>
                         </div>
                     </form>

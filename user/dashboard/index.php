@@ -1,3 +1,12 @@
+<?php
+    include './../template/header.php';
+    if(!isset($_SESSION['isLogin'])){
+        header('Location: ./user/login');
+    }
+    if(isset($_SESSION['isLogin']) && $_SESSION['varified'] != '1'){
+        header('Location: ./../verify');
+    }
+?>
 <!doctype html>
 <html class="no-js" lang="">
  

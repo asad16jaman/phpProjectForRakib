@@ -40,8 +40,7 @@
                         <div class="">
                             <h4 class="mb-3">Movies & TV Series</h4>
                             <h6 class="mb-3">Start from <span class="text-primary">$5/Month</span></h6>
-                            <span>Indulge In Original Productions
-                                Discover The Best Movies & TV series</span>
+                            <span>Indulge In Original Productions. Discover The Best Movies & TV series</span>
                         </div>
                     </div>
                 </div>

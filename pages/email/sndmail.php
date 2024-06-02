@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 
-function varifyme($email,$username,$messages){
+function varifyme($email,$username,$messages, $subject){
     try{
 
         $senderMail = 'asaduzzaman15-4330@diu.edu.bd';//this variable contain sender mail-
@@ -24,12 +24,10 @@ function varifyme($email,$username,$messages){
         $mail->setFrom($senderMail,'admin');                          //add sender
         $mail->addAddress($email,$username);                            //Add a recipient
         $mail->isHTML(true);   
-        $mail->Subject = 'This email is for your varification';  //subject of this email
+        $mail->Subject =  $subject;  //subject of this email
 
-        
-
-            $mail->Body    =  $messages;
-            $mail->send();
+        $mail->Body    =  $messages;
+        $mail->send();
 
         return true;
 

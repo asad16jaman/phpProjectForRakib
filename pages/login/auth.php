@@ -7,12 +7,11 @@
 
 $cnn = new mysqli($dbserver,$dbusername,$dbpassword,$db);
     if($cnn->connect_error){
-        die("there is error".$cnn->connect_error);
+        die("There is an error".$cnn->connect_error);
     }
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-  
     $email = $_POST['email'];
     $password = $_POST['password'];
 
@@ -27,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $_SESSION['varified'] = $user['varified'];
             header('Location: ./../../user/dashboard');
         }else{
-            $messages = "given creadential is incurrect...";
+            $messages = "Given creadential is incorrect...";
             $_SESSION['messages'] = $messages;
             header('Location: ./../../user/login/');
         }
